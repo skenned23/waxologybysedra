@@ -6,17 +6,17 @@ const BOOKING_URL = 'https://app.10to8.com/book/waxologybysedra/'
 
 const slides = [
   {
-    image: '/studio1.jpg',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=80&fit=crop',
     headline: 'Waxology Studio',
     sub: 'Got Hair? Get Waxed!',
   },
   {
-    image: '/studio2.jpg',
+    image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1600&q=80&fit=crop',
     headline: 'Smooth Skin Starts Here',
     sub: 'Master Cosmetologist · 10+ Years Experience',
   },
   {
-    image: '/studio3.jpg',
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80&fit=crop',
     headline: 'Your Confidence, Unveiled',
     sub: '113+ Five-Star Reviews in Warner Robins',
   },
@@ -48,7 +48,7 @@ export default function HeroSlideshow() {
         }}>
           <div style={{
             position: 'absolute', inset: 0,
-            background: 'linear-gradient(to bottom, rgba(107,63,160,0.55) 0%, rgba(233,30,140,0.35) 100%)',
+            background: 'linear-gradient(to bottom, rgba(107,63,160,0.4) 0%, rgba(233,30,140,0.25) 100%)',
           }} />
         </div>
       ))}
