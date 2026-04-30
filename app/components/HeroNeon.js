@@ -41,7 +41,7 @@ export default function HeroNeon() {
         overflow: 'hidden',
       }}>
         <img
-          src="/hero2.jpg"
+          src="/hero2.png"
           alt="Professional waxing service"
           style={{
             width: '100%',
