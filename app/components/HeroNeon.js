@@ -26,7 +26,7 @@ export default function HeroNeon() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 60%',
+            objectPosition:objectPosition: 'center 35%', 'center 60%',
             display: 'block',
             animation: 'neonFlicker 4s infinite alternate',
           }}
@@ -47,7 +47,7 @@ export default function HeroNeon() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition: 'center 60%',
+            objectPosition:objectPosition: 'center 35%', 'center 60%',
             display: 'block',
           }}
         />
