@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import HeroSlideshow from './components/HeroSlideshow'
 export const metadata = {
   title: 'Waxology Studio | Professional Waxing in Warner Robins, GA',
   description: 'Warner Robins premier waxing studio. Master Cosmetologist with 10+ years experience. Brazilians, full body waxing, eyebrows & more. Book today!',
@@ -227,23 +227,8 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="hero">
-        <div className="hero-badge">Warner Robins, GA · By Appointment Only</div>
-        <h1>Waxology <span>Studio</span></h1>
-        <p className="hero-sub">Got Hair? Get Waxed!</p>
-        <p className="hero-tagline">Master Cosmetologist · 10+ Years Experience · 113+ 5-Star Reviews</p>
-        <div className="stars">★★★★★</div>
-        <p className="review-count">113 Reviews · Best Waxing in Warner Robins</p>
-        <div className="hero-btns">
-          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-primary">📅 Book Appointment</a>
-          <a href="#services" className="btn-secondary">View Services</a>
-        </div>
-        <p className="hero-address">
-          📍 <a href="https://maps.google.com/?q=154+S+Houston+Lake+Rd+Ste+200+Warner+Robins+GA+31088" target="_blank" rel="noopener noreferrer">
-            154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088
-          </a>
-        </p>
-      </section>
+     <HeroSlideshow />
+       
 
       <div className="trust-bar">
         <div className="trust-item"><strong>10+</strong><span>Years Experience</span></div>
