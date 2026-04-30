@@ -7,29 +7,26 @@ export default function HeroNeon() {
     <section style={{
       position: 'relative',
       width: '100%',
-      height: '650px',
+      height: '500px',
       overflow: 'hidden',
       display: 'flex',
       alignItems: 'flex-end',
       justifyContent: 'center',
       backgroundColor: '#0a0a0a',
     }}>
-      {/* Hero background image */}
       <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/hero.jpg)',
         backgroundSize: 'cover',
-        backgroundPosition: 'center center',
+        backgroundPosition: 'center 40%',
         animation: 'neonFlicker 4s infinite alternate',
       }} />
 
-      {/* Lighter overlay */}
       <div style={{
         position: 'absolute', inset: 0,
         background: 'linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.45) 75%, rgba(0,0,0,0.65) 100%)',
       }} />
 
-      {/* Content pinned to bottom */}
       <div style={{
         position: 'relative', zIndex: 2,
         textAlign: 'center',
