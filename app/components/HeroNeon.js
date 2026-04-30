@@ -47,7 +47,7 @@ export default function HeroNeon() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            objectPosition:objectPosition: 'center 35%', 'center 60%',
+            objectPosition: 'center 35%',
             display: 'block',
           }}
         />
