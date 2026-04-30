@@ -10,41 +10,36 @@ export default function HeroNeon() {
       height: '650px',
       overflow: 'hidden',
       display: 'flex',
-      alignItems: 'center',
+      alignItems: 'flex-end',
       justifyContent: 'center',
+      backgroundColor: '#0a0a0a',
     }}>
       {/* Hero background image */}
       <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/hero.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundSize: 'contain',
+        backgroundPosition: 'center top',
+        backgroundRepeat: 'no-repeat',
         animation: 'neonFlicker 4s infinite alternate',
       }} />
 
-      {/* Dark overlay */}
+      {/* Dark overlay at bottom */}
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.6) 100%)',
+        background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.75) 75%, rgba(0,0,0,0.9) 100%)',
       }} />
 
-      {/* Content */}
+      {/* Content pinned to bottom */}
       <div style={{
         position: 'relative', zIndex: 2,
         textAlign: 'center',
-        padding: '2rem',
+        padding: '0 2rem 2.5rem',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
+        width: '100%',
       }}>
-        {/* Divider */}
-        <div style={{
-          width: '120px', height: '1px',
-          background: 'linear-gradient(to right, transparent, rgba(255,105,180,0.6), transparent)',
-          marginBottom: '1.5rem',
-        }} />
-
-        {/* Stars + reviews */}
         <div style={{ color: '#fbbf24', fontSize: '1.1rem', marginBottom: '0.4rem' }}>★★★★★</div>
         <p style={{
           fontSize: '0.85rem',
@@ -52,13 +47,12 @@ export default function HeroNeon() {
           fontFamily: 'sans-serif',
           letterSpacing: '2px',
           textTransform: 'uppercase',
-          marginBottom: '1.75rem',
+          marginBottom: '1.25rem',
         }}>
           113 Reviews · Best Waxing in Warner Robins
         </p>
 
-        {/* Buttons */}
-        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '1rem' }}>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" style={{
             background: 'linear-gradient(135deg, #e91e8c, #6b3fa0)',
             color: 'white', padding: '0.9rem 2rem', borderRadius: '30px',
