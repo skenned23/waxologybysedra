@@ -18,16 +18,15 @@ export default function HeroNeon() {
       <div style={{
         position: 'absolute', inset: 0,
         backgroundImage: 'url(/hero.jpg)',
-        backgroundSize: 'contain',
-        backgroundPosition: 'center top',
-        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
         animation: 'neonFlicker 4s infinite alternate',
       }} />
 
-      {/* Dark overlay at bottom */}
+      {/* Lighter overlay */}
       <div style={{
         position: 'absolute', inset: 0,
-        background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.75) 75%, rgba(0,0,0,0.9) 100%)',
+        background: 'linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.45) 75%, rgba(0,0,0,0.65) 100%)',
       }} />
 
       {/* Content pinned to bottom */}
@@ -43,7 +42,7 @@ export default function HeroNeon() {
         <div style={{ color: '#fbbf24', fontSize: '1.1rem', marginBottom: '0.4rem' }}>★★★★★</div>
         <p style={{
           fontSize: '0.85rem',
-          color: 'rgba(255,255,255,0.8)',
+          color: 'rgba(255,255,255,0.9)',
           fontFamily: 'sans-serif',
           letterSpacing: '2px',
           textTransform: 'uppercase',
@@ -72,7 +71,7 @@ export default function HeroNeon() {
           </a>
         </div>
 
-        <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.5)', fontFamily: 'sans-serif', letterSpacing: '1px' }}>
+        <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', fontFamily: 'sans-serif', letterSpacing: '1px' }}>
           📍 154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088
         </p>
       </div>
