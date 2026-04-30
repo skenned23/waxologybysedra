@@ -6,17 +6,17 @@ const BOOKING_URL = 'https://app.10to8.com/book/waxologybysedra/'
 
 const slides = [
   {
-    image: 'https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=80&fit=crop',
     headline: 'Waxology Studio',
     sub: 'Got Hair? Get Waxed!',
   },
   {
-    image: 'https://images.pexels.com/photos/3997991/pexels-photo-3997991.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://images.unsplash.com/photo-1718720410649-7524fcb0f0a5?w=1600&q=80&fit=crop',
     headline: 'Smooth Skin Starts Here',
     sub: 'Master Cosmetologist · 10+ Years Experience',
   },
   {
-    image: 'https://images.pexels.com/photos/3985329/pexels-photo-3985329.jpeg?auto=compress&cs=tinysrgb&w=1600',
+    image: 'https://images.unsplash.com/photo-1645477120165-a9f27bcb19d2?w=1600&q=80&fit=crop',
     headline: 'Your Confidence, Unveiled',
     sub: '113+ Five-Star Reviews in Warner Robins',
   },
@@ -36,7 +36,7 @@ export default function HeroSlideshow() {
   const next = () => setCurrent(prev => (prev + 1) % slides.length)
 
   return (
-    <section style={{ position: 'relative', width: '100%', height: '520px', overflow: 'hidden' }}>
+    <section style={{ position: 'relative', width: '100%', height: '650px', overflow: 'hidden' }}>
       {slides.map((slide, i) => (
         <div key={i} style={{
           position: 'absolute', inset: 0,
