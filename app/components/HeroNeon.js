@@ -7,34 +7,61 @@ export default function HeroNeon() {
     <section style={{
       position: 'relative',
       width: '100%',
-      height: '500px',
       overflow: 'hidden',
       display: 'flex',
-      alignItems: 'flex-end',
-      justifyContent: 'center',
       backgroundColor: '#0a0a0a',
     }}>
+      {/* Left panel - neon sign */}
       <div style={{
-        position: 'absolute', inset: 0,
-        backgroundImage: 'url(/hero.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center 40%',
-        animation: 'neonFlicker 4s infinite alternate',
-      }} />
+        width: '50%',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <img
+          src="/hero.jpg"
+          alt="Waxology Studio"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            display: 'block',
+            animation: 'neonFlicker 4s infinite alternate',
+          }}
+        />
+      </div>
 
+      {/* Right panel - Sedra waxing */}
       <div style={{
-        position: 'absolute', inset: 0,
-        background: 'linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.45) 75%, rgba(0,0,0,0.65) 100%)',
-      }} />
+        width: '50%',
+        position: 'relative',
+        overflow: 'hidden',
+      }}>
+        <img
+          src="/hero2.jpg"
+          alt="Professional waxing service"
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            display: 'block',
+          }}
+        />
+        {/* Overlay for content readability */}
+        <div style={{
+          position: 'absolute', inset: 0,
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%)',
+        }} />
+      </div>
 
+      {/* Content overlay across both panels */}
       <div style={{
-        position: 'relative', zIndex: 2,
+        position: 'absolute', bottom: '2.5rem', left: 0, right: 0,
+        zIndex: 2,
         textAlign: 'center',
-        padding: '0 2rem 2.5rem',
+        padding: '0 2rem',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        width: '100%',
       }}>
         <div style={{ color: '#fbbf24', fontSize: '1.1rem', marginBottom: '0.4rem' }}>★★★★★</div>
         <p style={{
@@ -44,6 +71,7 @@ export default function HeroNeon() {
           letterSpacing: '2px',
           textTransform: 'uppercase',
           marginBottom: '1.25rem',
+          textShadow: '0 1px 4px rgba(0,0,0,0.8)',
         }}>
           113 Reviews · Best Waxing in Warner Robins
         </p>
@@ -58,7 +86,7 @@ export default function HeroNeon() {
             📅 Book Appointment
           </a>
           <a href="#services" style={{
-            background: 'transparent',
+            background: 'rgba(0,0,0,0.4)',
             color: 'rgba(255,255,255,0.9)',
             border: '1px solid rgba(255,105,180,0.6)',
             padding: '0.9rem 2rem', borderRadius: '30px',
@@ -68,7 +96,7 @@ export default function HeroNeon() {
           </a>
         </div>
 
-        <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.6)', fontFamily: 'sans-serif', letterSpacing: '1px' }}>
+        <p style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.7)', fontFamily: 'sans-serif', letterSpacing: '1px', textShadow: '0 1px 4px rgba(0,0,0,0.8)' }}>
           📍 154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088
         </p>
       </div>
