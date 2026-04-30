@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import HeroSlideshow from './components/HeroSlideshow'
+import HeroNeon from './components/HeroNeon'
 export const metadata = {
   title: 'Waxology Studio | Professional Waxing in Warner Robins, GA',
   description: 'Warner Robins premier waxing studio. Master Cosmetologist with 10+ years experience. Brazilians, full body waxing, eyebrows & more. Book today!',
@@ -227,7 +227,7 @@ export default function Home() {
         </div>
       </nav>
 
-     <HeroSlideshow />
+     <HeroNeon />
        
 
       <div className="trust-bar">
