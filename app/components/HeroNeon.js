@@ -7,6 +7,7 @@ export default function HeroNeon() {
     <section style={{
       position: 'relative',
       width: '100%',
+      height: '500px',
       overflow: 'hidden',
       display: 'flex',
       backgroundColor: '#0a0a0a',
@@ -14,6 +15,7 @@ export default function HeroNeon() {
       {/* Left panel - neon sign */}
       <div style={{
         width: '50%',
+        height: '100%',
         position: 'relative',
         overflow: 'hidden',
       }}>
@@ -24,6 +26,7 @@ export default function HeroNeon() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
+            objectPosition: 'center',
             display: 'block',
             animation: 'neonFlicker 4s infinite alternate',
           }}
@@ -33,6 +36,7 @@ export default function HeroNeon() {
       {/* Right panel - Sedra waxing */}
       <div style={{
         width: '50%',
+        height: '100%',
         position: 'relative',
         overflow: 'hidden',
       }}>
@@ -43,19 +47,19 @@ export default function HeroNeon() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
+            objectPosition: 'center',
             display: 'block',
           }}
         />
-        {/* Overlay for content readability */}
         <div style={{
           position: 'absolute', inset: 0,
-          background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.6) 100%)',
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5) 100%)',
         }} />
       </div>
 
-      {/* Content overlay across both panels */}
+      {/* Content overlay */}
       <div style={{
-        position: 'absolute', bottom: '2.5rem', left: 0, right: 0,
+        position: 'absolute', bottom: '2rem', left: 0, right: 0,
         zIndex: 2,
         textAlign: 'center',
         padding: '0 2rem',
