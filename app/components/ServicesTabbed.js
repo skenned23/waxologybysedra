@@ -4,13 +4,15 @@ import { useState } from "react";
 const TABS = [
   {
     id: "personal",
-    label: "Personal Care Services",
+    label: "Most Popular",
     services: [
-      { name: "Full Body Waxing", price: "$7", url: "https://app.10to8.com/book/csnjuk-free/448684", desc: "Experience the ultimate in hair removal services at Waxology Studio. My body waxing service covers all areas, ensuring you're left with smooth, beautiful skin from head to toe." },
-      { name: "Inclusive Packages", price: "$85", url: "https://app.10to8.com/book/csnjuk-free/448688", desc: "At Waxology Studio, I believe in giving you more for less. My thoughtfully curated packages are designed to help you save on à la carte services." },
-      { name: "Brazilians", price: "$40", url: "https://app.10to8.com/book/csnjuk-free/448680", desc: "Get smooth, long-lasting results with a first-timer-friendly Brazilian at Waxology Studio in Warner Robins. Comfortable, professional, and discreet." },
-      { name: "Tint & Eyebrows", price: "$8", url: "https://app.10to8.com/book/csnjuk-free/448679", desc: "Enhance your natural beauty with expert tint and eyebrow services. Whether you're looking to define your brows or add color to your lashes, I've got you covered." },
-    ],
+     services: [
+  { name: "Brazilian", price: "$40", originalPrice: "$48", url: "https://app.10to8.com/book/csnjuk-free/448680", desc: "Our #1 most booked service. First-timer friendly with smooth, long-lasting results in a comfortable, professional setting." },
+  { name: "Eyebrow", price: "$8", url: "https://app.10to8.com/book/csnjuk-free/448636", desc: "Expert brow shaping to define and enhance your natural arch. Quick, precise, and perfect every time." },
+  { name: "Eye/Lip/Chin", price: "$20", url: "https://app.10to8.com/book/csnjuk-free/448657", desc: "Full facial combo — eyes, lips, and chin in one visit. Our most popular facial waxing package." },
+  { name: "Male Brazilian", price: "$55", originalPrice: "$65", url: "https://app.10to8.com/book/csnjuk-free/1940888", desc: "Professional male Brazilian waxing — discreet, thorough, and by appointment only." },
+  { name: "Eye & Lip", price: "$14", url: "https://app.10to8.com/book/csnjuk-free/448655", desc: "Clean up and define your eye and lip areas with precision. A quick, popular combo service." },
+],
   },
   {
     id: "above",
