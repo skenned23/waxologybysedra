@@ -19,28 +19,22 @@ const reviews = [
 ];
 
 const REVIEWS_PER_PAGE = 2;
+const TOTAL_PAGES = Math.ceil(reviews.length / REVIEWS_PER_PAGE);
 
 export default function Testimonials() {
   const [page, setPage] = useState(0);
 
-useEffect(() => {
-  const timer = setInterval(() => {
-    setPage((p) => (p === totalPages - 1 ? 0 : p + 1));
-  }, 4000);
-  return () => clearInterval(timer);
-}, [totalPages]);
-  const totalPages = Math.ceil(reviews.length / REVIEWS_PER_PAGE);
- useEffect(() => {
+  useEffect(() => {
     const timer = setInterval(() => {
-      setPage((p) => (p === totalPages - 1 ? 0 : p + 1));
+      setPage((p) => (p === TOTAL_PAGES - 1 ? 0 : p + 1));
     }, 4000);
     return () => clearInterval(timer);
-  }, [totalPages]);
+  }, []);
 
-  const current = reviews.slice
+  const current = reviews.slice(page * REVIEWS_PER_PAGE, page * REVIEWS_PER_PAGE + REVIEWS_PER_PAGE);
 
-  const prev = () => setPage((p) => (p === 0 ? totalPages - 1 : p - 1));
-  const next = () => setPage((p) => (p === totalPages - 1 ? 0 : p + 1));
+  const prev = () => setPage((p) => (p === 0 ? TOTAL_PAGES - 1 : p - 1));
+  const next = () => setPage((p) => (p === TOTAL_PAGES - 1 ? 0 : p + 1));
 
   return (
     <section style={styles.section}>
@@ -49,7 +43,6 @@ useEffect(() => {
 
       <div style={styles.carouselWrap}>
         <button onClick={prev} style={styles.arrow}>‹</button>
-
         <div style={styles.cards}>
           {current.map((r, i) => (
             <div key={i} style={styles.card}>
@@ -65,12 +58,11 @@ useEffect(() => {
             </div>
           ))}
         </div>
-
         <button onClick={next} style={styles.arrow}>›</button>
       </div>
 
       <div style={styles.dots}>
-        {Array.from({ length: totalPages }).map((_, i) => (
+        {Array.from({ length: TOTAL_PAGES }).map((_, i) => (
           <button
             key={i}
             onClick={() => setPage(i)}
@@ -80,20 +72,10 @@ useEffect(() => {
       </div>
 
       <div style={styles.ctaWrap}>
-        <a
-          href={GOOGLE_REVIEW_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          style={styles.reviewBtn}
-        >
+        <a href={GOOGLE_REVIEW_URL} target="_blank" rel="noopener noreferrer" style={styles.reviewBtn}>
           ⭐ Leave a Google Review
         </a>
-        <a
-          href="https://www.google.com/maps/search/Waxology+Studio+Warner+Robins"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={styles.allReviewsBtn}
-        >
+        <a href="https://www.google.com/maps/search/Waxology+Studio+Warner+Robins" target="_blank" rel="noopener noreferrer" style={styles.allReviewsBtn}>
           See All Reviews
         </a>
       </div>
@@ -102,155 +84,23 @@ useEffect(() => {
 }
 
 const styles = {
-  section: {
-    backgroundColor: "#2d2645",
-    padding: "64px 40px",
-    textAlign: "center",
-  },
-  heading: {
-    fontFamily: "'Playfair Display', Georgia, serif",
-    fontSize: "2.2rem",
-    color: "#4ecdc4",
-    marginBottom: "8px",
-    letterSpacing: "0.02em",
-  },
-  subheading: {
-    fontFamily: "'Lato', sans-serif",
-    fontSize: "1rem",
-    color: "#b8b0d0",
-    marginBottom: "40px",
-  },
-  carouselWrap: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "16px",
-    maxWidth: "1000px",
-    margin: "0 auto",
-  },
-  arrow: {
-    background: "transparent",
-    border: "2px solid #4ecdc4",
-    color: "#4ecdc4",
-    borderRadius: "50%",
-    width: "44px",
-    height: "44px",
-    fontSize: "1.5rem",
-    cursor: "pointer",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    flexShrink: 0,
-    lineHeight: "1",
-  },
-  cards: {
-    display: "flex",
-    gap: "24px",
-    flex: 1,
-    flexWrap: "wrap",
-    justifyContent: "center",
-  },
-  card: {
-    backgroundColor: "#3a3358",
-    borderRadius: "12px",
-    padding: "28px",
-    flex: "1 1 300px",
-    maxWidth: "420px",
-    textAlign: "left",
-    position: "relative",
-  },
-  quoteIcon: {
-    position: "absolute",
-    top: "16px",
-    left: "20px",
-    fontSize: "3rem",
-    color: "#4ecdc4",
-    opacity: 0.3,
-    fontFamily: "Georgia, serif",
-    lineHeight: "1",
-  },
-  cardTop: {
-    display: "flex",
-    alignItems: "center",
-    gap: "12px",
-    marginBottom: "16px",
-  },
-  avatar: {
-    width: "48px",
-    height: "48px",
-    borderRadius: "50%",
-    backgroundColor: "#5a4e7a",
-    color: "#ffffff",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontFamily: "'Lato', sans-serif",
-    fontWeight: "700",
-    fontSize: "0.9rem",
-    flexShrink: 0,
-  },
-  reviewerName: {
-    fontFamily: "'Lato', sans-serif",
-    fontWeight: "700",
-    color: "#ffffff",
-    fontSize: "0.95rem",
-  },
-  stars: {
-    color: "#f59e0b",
-    fontSize: "0.9rem",
-    letterSpacing: "1px",
-  },
-  reviewText: {
-    fontFamily: "'Lato', sans-serif",
-    fontSize: "0.9rem",
-    color: "#b8b0d0",
-    lineHeight: "1.7",
-    fontStyle: "italic",
-  },
-  dots: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "8px",
-    marginTop: "24px",
-  },
-  dot: {
-    width: "8px",
-    height: "8px",
-    borderRadius: "50%",
-    background: "#5a4e7a",
-    border: "none",
-    cursor: "pointer",
-    padding: 0,
-  },
-  dotActive: {
-    background: "#4ecdc4",
-  },
-  ctaWrap: {
-    display: "flex",
-    justifyContent: "center",
-    gap: "16px",
-    marginTop: "40px",
-    flexWrap: "wrap",
-  },
-  reviewBtn: {
-    background: "#4ecdc4",
-    color: "#1f1235",
-    padding: "12px 28px",
-    borderRadius: "30px",
-    textDecoration: "none",
-    fontFamily: "'Lato', sans-serif",
-    fontWeight: "700",
-    fontSize: "0.95rem",
-  },
-  allReviewsBtn: {
-    background: "transparent",
-    color: "#4ecdc4",
-    border: "2px solid #4ecdc4",
-    padding: "12px 28px",
-    borderRadius: "30px",
-    textDecoration: "none",
-    fontFamily: "'Lato', sans-serif",
-    fontWeight: "700",
-    fontSize: "0.95rem",
-  },
+  section: { backgroundColor: "#2d2645", padding: "64px 40px", textAlign: "center" },
+  heading: { fontFamily: "'Playfair Display', Georgia, serif", fontSize: "2.2rem", color: "#4ecdc4", marginBottom: "8px", letterSpacing: "0.02em" },
+  subheading: { fontFamily: "'Lato', sans-serif", fontSize: "1rem", color: "#b8b0d0", marginBottom: "40px" },
+  carouselWrap: { display: "flex", alignItems: "center", justifyContent: "center", gap: "16px", maxWidth: "1000px", margin: "0 auto" },
+  arrow: { background: "transparent", border: "2px solid #4ecdc4", color: "#4ecdc4", borderRadius: "50%", width: "44px", height: "44px", fontSize: "1.5rem", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 },
+  cards: { display: "flex", gap: "24px", flex: 1, flexWrap: "wrap", justifyContent: "center" },
+  card: { backgroundColor: "#3a3358", borderRadius: "12px", padding: "28px", flex: "1 1 300px", maxWidth: "420px", textAlign: "left", position: "relative" },
+  quoteIcon: { position: "absolute", top: "16px", left: "20px", fontSize: "3rem", color: "#4ecdc4", opacity: 0.3, fontFamily: "Georgia, serif", lineHeight: "1" },
+  cardTop: { display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" },
+  avatar: { width: "48px", height: "48px", borderRadius: "50%", backgroundColor: "#5a4e7a", color: "#ffffff", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: "'Lato', sans-serif", fontWeight: "700", fontSize: "0.9rem", flexShrink: 0 },
+  reviewerName: { fontFamily: "'Lato', sans-serif", fontWeight: "700", color: "#ffffff", fontSize: "0.95rem" },
+  stars: { color: "#f59e0b", fontSize: "0.9rem", letterSpacing: "1px" },
+  reviewText: { fontFamily: "'Lato', sans-serif", fontSize: "0.9rem", color: "#b8b0d0", lineHeight: "1.7", fontStyle: "italic" },
+  dots: { display: "flex", justifyContent: "center", gap: "8px", marginTop: "24px" },
+  dot: { width: "8px", height: "8px", borderRadius: "50%", background: "#5a4e7a", border: "none", cursor: "pointer", padding: 0 },
+  dotActive: { background: "#4ecdc4" },
+  ctaWrap: { display: "flex", justifyContent: "center", gap: "16px", marginTop: "40px", flexWrap: "wrap" },
+  reviewBtn: { background: "#4ecdc4", color: "#1f1235", padding: "12px 28px", borderRadius: "30px", textDecoration: "none", fontFamily: "'Lato', sans-serif", fontWeight: "700", fontSize: "0.95rem" },
+  allReviewsBtn: { background: "transparent", color: "#4ecdc4", border: "2px solid #4ecdc4", padding: "12px 28px", borderRadius: "30px", textDecoration: "none", fontFamily: "'Lato', sans-serif", fontWeight: "700", fontSize: "0.95rem" },
 };
