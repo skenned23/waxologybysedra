@@ -19,7 +19,7 @@ export default function AwardBadge() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-          transform: 'scale(1.18)',
+          transform: 'scale(1.35)',
           }}
         />
       </div>
