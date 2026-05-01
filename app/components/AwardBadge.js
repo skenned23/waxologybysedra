@@ -5,24 +5,17 @@ export default function AwardBadge() {
       padding: '60px 20px',
       textAlign: 'center',
     }}>
-      <div style={{
-        width: '280px',
-        height: '280px',
-        borderRadius: '50%',
-        overflow: 'hidden',
-        margin: '0 auto 16px',
-      }}>
-        <img
-          src="/award-badge.png"
-          alt="Best Pros in Town — Waxology by Sedra"
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-          transform: 'scale(1.2 I 5)',
-          }}
-        />
-      </div>
+      <img
+        src="/award-badge.png"
+        alt="Best Pros in Town — Waxology by Sedra"
+        style={{
+          width: '280px',
+          objectFit: 'contain',
+          marginBottom: '16px',
+          filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.4))',
+          borderRadius: '8px',
+        }}
+      />
       <p style={{
         color: '#a89ec9',
         fontSize: '14px',
