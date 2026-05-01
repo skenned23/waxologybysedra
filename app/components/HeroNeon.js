@@ -127,4 +127,4 @@ export default function HeroNeon() {
       `}</style>
     </section>
   )
-} OK all right then I'll see you see you soon mommy's in the shower
+}
