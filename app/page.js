@@ -6,6 +6,7 @@ import BookingNote from './components/BookingNote'
 import AwardBadge from './components/AwardBadge';
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
+import MobileNav from './components/MobileNav'
 
 
 export const metadata = {
@@ -107,6 +108,7 @@ export default function Home() {
 
       <nav>
         <div className="nav-logo">Waxology <span>Studio</span></div>
+<MobileNav />
         <div className="nav-links">
           <a href="#">Home</a>
           <a href="#services">Services</a>
