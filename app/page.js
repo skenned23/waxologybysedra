@@ -152,8 +152,6 @@ export default function Home() {
         <div className="footer-links">
           <a href="#">Home</a>
           <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#reviews">Reviews</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book Now</a>
         </div>
         <p>© 2026 Waxology Studio · Warner Robins, GA · "From Head to Toe & Everything in Between"</p>
