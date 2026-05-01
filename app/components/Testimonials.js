@@ -30,7 +30,14 @@ useEffect(() => {
   return () => clearInterval(timer);
 }, [totalPages]);
   const totalPages = Math.ceil(reviews.length / REVIEWS_PER_PAGE);
-  const current = reviews.slice(page * REVIEWS_PER_PAGE, page * REVIEWS_PER_PAGE + REVIEWS_PER_PAGE);
+ useEffect(() => {
+    const timer = setInterval(() => {
+      setPage((p) => (p === totalPages - 1 ? 0 : p + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [totalPages]);
+
+  const current = reviews.slice
 
   const prev = () => setPage((p) => (p === 0 ? totalPages - 1 : p - 1));
   const next = () => setPage((p) => (p === totalPages - 1 ? 0 : p + 1));
