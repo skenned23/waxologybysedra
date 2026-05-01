@@ -4,6 +4,7 @@ import IntroCircles from './components/IntroCircles'
 import ServicesTabbed from './components/ServicesTabbed'
 import BookingNote from './components/BookingNote'
 import Testimonials from './components/Testimonials'
+import Gallery from './components/Gallery'
 
 export const metadata = {
   title: 'Waxology Studio | Professional Waxing in Warner Robins, GA',
@@ -128,6 +129,7 @@ export default function Home() {
       </div>
     <BookingNote />
 <Testimonials />
+<Gallery />
 
 
       <div id="about" className="about-section">
