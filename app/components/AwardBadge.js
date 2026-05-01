@@ -12,6 +12,7 @@ export default function AwardBadge() {
           width: '280px',
           objectFit: 'contain',
           marginBottom: '16px',
+          marginRight: '40px',
           filter: 'drop-shadow(0 4px 24px rgba(0,0,0,0.4))',
           borderRadius: '8px',
         }}
