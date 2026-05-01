@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const GOOGLE_REVIEW_URL = "https://g.page/r/CfdTt1zgUZJmEAE/review";
 
@@ -22,6 +22,13 @@ const REVIEWS_PER_PAGE = 2;
 
 export default function Testimonials() {
   const [page, setPage] = useState(0);
+
+useEffect(() => {
+  const timer = setInterval(() => {
+    setPage((p) => (p === totalPages - 1 ? 0 : p + 1));
+  }, 4000);
+  return () => clearInterval(timer);
+}, [totalPages]);
   const totalPages = Math.ceil(reviews.length / REVIEWS_PER_PAGE);
   const current = reviews.slice(page * REVIEWS_PER_PAGE, page * REVIEWS_PER_PAGE + REVIEWS_PER_PAGE);
 
