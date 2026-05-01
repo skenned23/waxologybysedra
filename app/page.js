@@ -3,7 +3,7 @@ import HeroNeon from './components/HeroNeon'
 import IntroCircles from './components/IntroCircles'
 import ServicesTabbed from './components/ServicesTabbed'
 import BookingNote from './components/BookingNote'
-import AwardBadge from '../components/AwardBadge';
+import AwardBadge from './components/AwardBadge';
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
 
