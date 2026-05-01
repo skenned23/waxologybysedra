@@ -56,6 +56,13 @@ export default function Home() {
         .nav-logo { font-size: 1.3rem; font-weight: 700; color: var(--purple); }
         .nav-logo span { color: var(--pink); }
         .nav-links { display: flex; gap: 1.5rem; align-items: center; }
+        .hamburger-toggle { display: none; }
+        .hamburger-label { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+        .hamburger-label span { display: block; width: 24px; height: 2px; background: #6b3fa0; transition: all 0.3s; }
+        .mobile-menu { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; border-bottom: 2px solid #e5d5f5; box-shadow: 0 4px 12px rgba(107,63,160,0.12); z-index: 99; padding: 1rem 2rem; flex-direction: column; gap: 1rem; }
+        .mobile-menu a { color: #6b7280; text-decoration: none; font-family: sans-serif; font-size: 1rem; padding: 0.5rem 0; border-bottom: 1px solid #f5f0ff; }
+        .mobile-menu .mobile-book { background: linear-gradient(135deg, #e91e8c, #6b3fa0); color: white !important; padding: 0.75rem 1.5rem; border-radius: 25px; text-align: center; font-weight: 600; border-bottom: none; margin-top: 0.5rem; }
+        .hamburger-toggle:checked ~ .mobile-menu { display: flex; }
         .nav-links a { color: var(--gray); text-decoration: none; font-size: 0.9rem; font-family: sans-serif; }
         .nav-links a:hover { color: var(--purple); }
         .nav-book { background: linear-gradient(135deg, var(--pink), var(--purple)); color: white !important; padding: 0.5rem 1.25rem; border-radius: 25px; font-weight: 600; }
@@ -99,20 +106,29 @@ export default function Home() {
         .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
         @media (max-width: 768px) {
           .nav-links { display: none; }
+          .hamburger-label { display: flex; }
           .trust-bar { gap: 1.5rem; }
           .about-inner { grid-template-columns: 1fr; }
         }
       `}</style>
 
-      <nav>
+      <nav style={{ position: 'relative' }}>
         <div className="nav-logo">Waxology <span>Studio</span></div>
-
         <div className="nav-links">
           <a href="#">Home</a>
           <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#reviews">Reviews</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="nav-book">Book Now</a>
+        </div>
+        <input type="checkbox" id="hamburger-toggle" className="hamburger-toggle" />
+        <label htmlFor="hamburger-toggle" className="hamburger-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div className="mobile-menu">
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="mobile-book">Book Now</a>
         </div>
       </nav>
 
