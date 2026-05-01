@@ -5,7 +5,7 @@ const TABS = [
   {
     id: "personal",
     label: "Most Popular",
-    services: [
+  
      services: [
   { name: "Brazilian", price: "$40", originalPrice: "$48", url: "https://app.10to8.com/book/csnjuk-free/448680", desc: "Our #1 most booked service. First-timer friendly with smooth, long-lasting results in a comfortable, professional setting." },
   { name: "Eyebrow", price: "$8", url: "https://app.10to8.com/book/csnjuk-free/448636", desc: "Expert brow shaping to define and enhance your natural arch. Quick, precise, and perfect every time." },
