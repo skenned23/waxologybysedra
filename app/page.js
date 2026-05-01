@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link'
 import HeroNeon from './components/HeroNeon'
 import IntroCircles from './components/IntroCircles'
@@ -9,10 +10,7 @@ import Gallery from './components/Gallery'
 import MobileNav from './components/MobileNav'
 
 
-export const metadata = {
-  title: 'Waxology Studio | Professional Waxing in Warner Robins, GA',
-  description: 'Warner Robins premier waxing studio. Master Cosmetologist with 10+ years experience. Brazilians, full body waxing, eyebrows & more. Book today!',
-}
+
 
 const BOOKING_URL = 'https://app.10to8.com/book/waxologybysedra/'
 
