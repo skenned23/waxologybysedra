@@ -13,7 +13,7 @@ export default function AwardBadge() {
   height: '350px',
   objectFit: 'contain',
   marginBottom: '16px',
-  mixBlendMode: 'multiply',
+ 
 }}
       />
       <p style={{
