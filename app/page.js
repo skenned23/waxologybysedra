@@ -135,31 +135,8 @@ export default function Home() {
 <Gallery />
 
 
-      <div id="about" className="about-section">
-        <div className="about-inner">
-          <div className="about-text">
-            <div className="section-label">Meet Your Esthetician</div>
-            <h2 className="section-title">Waxology by Sedra</h2>
-            <p>Welcome to Waxology Studio — Warner Robins' premier destination for top-notch personal care. I'm Sedra, a Master Cosmetologist with over a decade of experience dedicated to the art of hair removal, ingrown hair extractions, and full body waxing.</p>
-            <p>At Waxology Studio, your satisfaction is my priority. I'm not just about removing unwanted hair — I'm about enhancing your confidence and comfort. Every visit is professional, private, and personalized to you.</p>
-            <div className="about-features">
-              <div className="about-feature">Master Cosmetologist License</div>
-              <div className="about-feature">10+ Years Experience</div>
-              <div className="about-feature">Female-Owned Business</div>
-              <div className="about-feature">First-Timer Friendly</div>
-              <div className="about-feature">By Appointment Only — No Walk-Ins</div>
-              <div className="about-feature">Clean, Private, Professional Studio</div>
-            </div>
-          </div>
-          <div className="about-visual">
-            <h3>Ready for Smooth Skin?</h3>
-            <p>Waxology Studio serves Warner Robins and surrounding Middle Georgia communities. Book your appointment today and experience the difference a true professional makes.</p>
-            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-white">Book Now →</a>
-          </div>
-        </div>
-      </div>
-
-     
+    
+     yeah
 
       <div id="contact" className="cta-section">
         <h2>Ready to Get Smooth?</h2>
