@@ -9,11 +9,12 @@ export default function AwardBadge() {
         src="/award-badge.png"
         alt="Best Pros in Town — Waxology by Sedra"
         style={{
-          width: '180px',
-          height: '180px',
-          objectFit: 'contain',
-          marginBottom: '16px',
-        }}
+  width: '350px',
+  height: '350px',
+  objectFit: 'contain',
+  marginBottom: '16px',
+  mixBlendMode: 'multiply',
+}}
       />
       <p style={{
         color: '#a89ec9',
