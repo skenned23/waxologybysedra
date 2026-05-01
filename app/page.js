@@ -159,22 +159,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div id="reviews" className="reviews-section">
-        <div className="reviews-inner">
-          <div className="section-label">What Clients Say</div>
-          <h2 className="section-title">113+ Five-Star Reviews</h2>
-          <p className="section-desc">Don't take our word for it — here's what real clients have to say about Waxology Studio.</p>
-          <div className="reviews-grid">
-            {reviews.map((r, i) => (
-              <div key={i} className="review-card">
-                <div className="review-stars">★★★★★</div>
-                <p className="review-text">"{r.text}"</p>
-                <div className="review-name">— {r.name}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+     
 
       <div id="contact" className="cta-section">
         <h2>Ready to Get Smooth?</h2>
