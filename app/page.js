@@ -3,6 +3,7 @@ import HeroNeon from './components/HeroNeon'
 import IntroCircles from './components/IntroCircles'
 import ServicesTabbed from './components/ServicesTabbed'
 import BookingNote from './components/BookingNote'
+import Testimonials from './components/Testimonials'
 
 export const metadata = {
   title: 'Waxology Studio | Professional Waxing in Warner Robins, GA',
@@ -125,10 +126,9 @@ export default function Home() {
       <div id="services">
         <ServicesTabbed />
       </div>
-      <div id="services">
-  <ServicesTabbed />
-</div>
-<BookingNote />
+    <BookingNote />
+<Testimonials />
+
 
       <div id="about" className="about-section">
         <div className="about-inner">
