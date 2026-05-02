@@ -1,5 +1,3 @@
-
-import Link from 'next/link'
 import HeroNeon from './components/HeroNeon'
 import IntroCircles from './components/IntroCircles'
 import ServicesTabbed from './components/ServicesTabbed'
@@ -8,20 +6,7 @@ import AwardBadge from './components/AwardBadge';
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
 
-
-
-
-
 const BOOKING_URL = 'https://app.10to8.com/book/waxologybysedra/'
-
-const reviews = [
-  { name: 'Yneish Hunt', text: 'Sedra is the best — the only person I\'ll trust with my waxing. She takes her time, gets your mind off the pain and you really enjoy your time while she does her job.', rating: 5 },
-  { name: 'Christina Johnson', text: 'The only person I let wax my brows and do my bikini wax. Sedra is the best!!', rating: 5 },
-  { name: 'Twilight Tasha', text: 'Very first time going in and it was a very relaxing atmosphere. Sedra made me feel so comfortable. Will be coming back for sure.', rating: 5 },
-  { name: 'Chelsea Evans', text: 'The best waxer ever!!! Sedra is very knowledgeable.', rating: 5 },
-  { name: 'Phylisa Hammontree', text: 'The best waxing place in Warner Robins.', rating: 5 },
-  { name: 'Jasmine Haynes', text: 'Service is amazing. She does a really good job & she is so sweet & professional. I will be back & I will bring her some more business. Very clean.', rating: 5 },
-]
 
 export default function Home() {
   return (
@@ -66,41 +51,14 @@ export default function Home() {
         .nav-links a { color: var(--gray); text-decoration: none; font-size: 0.9rem; font-family: sans-serif; }
         .nav-links a:hover { color: var(--purple); }
         .nav-book { background: linear-gradient(135deg, var(--pink), var(--purple)); color: white !important; padding: 0.5rem 1.25rem; border-radius: 25px; font-weight: 600; }
-        .trust-bar {
-          background: linear-gradient(135deg, var(--purple), var(--pink));
-          padding: 1.25rem 2rem;
-          display: flex;
-          justify-content: center;
-          gap: 3rem;
-          flex-wrap: wrap;
-        }
+        .trust-bar { background: linear-gradient(135deg, var(--purple), var(--pink)); padding: 1.25rem 2rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; }
         .trust-item { color: white; text-align: center; font-family: sans-serif; }
         .trust-item strong { display: block; font-size: 1.3rem; }
         .trust-item span { font-size: 0.8rem; opacity: 0.85; }
-        .section { padding: 4rem 2rem; max-width: 1100px; margin: 0 auto; }
-        .section-label { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--pink); font-family: sans-serif; margin-bottom: 0.5rem; }
-        .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--purple); margin-bottom: 1rem; }
-        .section-desc { color: var(--gray); font-size: 1rem; max-width: 560px; font-family: sans-serif; line-height: 1.7; margin-bottom: 2.5rem; }
-        .about-section { background: linear-gradient(135deg, var(--purple-pale), var(--pink-pale)); padding: 4rem 2rem; }
-        .about-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
-        .about-text p { color: var(--gray); font-size: 1rem; line-height: 1.8; font-family: sans-serif; margin-bottom: 1rem; }
-        .about-features { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem; }
-        .about-feature { display: flex; align-items: center; gap: 0.75rem; font-family: sans-serif; font-size: 0.95rem; }
-        .about-feature::before { content: '✓'; color: var(--pink); font-weight: 700; }
-        .about-visual { background: linear-gradient(135deg, var(--purple), var(--pink)); border-radius: 20px; padding: 2.5rem; text-align: center; color: white; }
-        .about-visual h3 { font-size: 1.4rem; margin-bottom: 1rem; }
-        .about-visual p { font-size: 0.95rem; opacity: 0.9; font-family: sans-serif; line-height: 1.7; }
-        .btn-white { background: white; color: var(--purple); padding: 0.85rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 700; font-family: sans-serif; font-size: 1rem; display: inline-block; margin-top: 1.5rem; }
-        .reviews-section { background: white; padding: 4rem 2rem; }
-        .reviews-inner { max-width: 1100px; margin: 0 auto; }
-        .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem; }
-        .review-card { background: var(--purple-pale); border: 1px solid var(--border); border-radius: 16px; padding: 1.5rem; }
-        .review-stars { color: #f59e0b; margin-bottom: 0.75rem; }
-        .review-text { font-size: 0.95rem; color: var(--dark); line-height: 1.7; margin-bottom: 1rem; font-style: italic; }
-        .review-name { font-size: 0.85rem; font-weight: 700; color: var(--purple); font-family: sans-serif; }
         .cta-section { background: linear-gradient(135deg, var(--purple), var(--pink)); padding: 4rem 2rem; text-align: center; color: white; }
         .cta-section h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 1rem; }
         .cta-section p { font-size: 1rem; opacity: 0.9; margin-bottom: 2rem; font-family: sans-serif; max-width: 500px; margin-left: auto; margin-right: auto; }
+        .btn-white { background: white; color: var(--purple); padding: 0.85rem 2rem; border-radius: 30px; text-decoration: none; font-weight: 700; font-family: sans-serif; font-size: 1rem; display: inline-block; margin-top: 1.5rem; }
         footer { background: var(--dark); color: rgba(255,255,255,0.7); padding: 2.5rem 2rem; text-align: center; font-family: sans-serif; font-size: 0.9rem; }
         footer a { color: var(--pink-light); text-decoration: none; }
         .footer-links { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
@@ -108,7 +66,6 @@ export default function Home() {
           .nav-links { display: none; }
           .hamburger-label { display: flex; }
           .trust-bar { gap: 1.5rem; }
-          .about-inner { grid-template-columns: 1fr; }
         }
       `}</style>
 
@@ -117,7 +74,8 @@ export default function Home() {
         <div className="nav-links">
           <a href="#">Home</a>
           <a href="#services">Services</a>
-          <a href="/contact" style={{ color: 'var(--gray)', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif' }}>Contact</a>
+          <a href="/insights">Insights</a>
+          <a href="/contact">Contact</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="nav-book">Book Now</a>
         </div>
         <input type="checkbox" id="hamburger-toggle" className="hamburger-toggle" />
@@ -129,6 +87,8 @@ export default function Home() {
         <div className="mobile-menu">
           <a href="#">Home</a>
           <a href="#services">Services</a>
+          <a href="/insights">Insights</a>
+          <a href="/contact">Contact</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="mobile-book">Book Now</a>
         </div>
       </nav>
@@ -146,14 +106,10 @@ export default function Home() {
       <div id="services">
         <ServicesTabbed />
       </div>
-    <BookingNote />
-    <AwardBadge />
-<Testimonials />
-<Gallery />
-
-
-    
-     yeah
+      <BookingNote />
+      <AwardBadge />
+      <Testimonials />
+      <Gallery />
 
       <div id="contact" className="cta-section">
         <h2>Ready to Get Smooth?</h2>
@@ -169,6 +125,8 @@ export default function Home() {
         <div className="footer-links">
           <a href="#">Home</a>
           <a href="#services">Services</a>
+          <a href="/insights">Insights</a>
+          <a href="/contact">Contact</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book Now</a>
         </div>
         <p>© 2026 Waxology Studio · Warner Robins, GA · "From Head to Toe & Everything in Between"</p>
