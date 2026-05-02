@@ -135,8 +135,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
-export default function InsightPost({ params }: { params: { slug: string } }) {
-  const post = posts[params.slug];
+export default function InsightPost({ params }: any) {
+  const post = posts[params.slug as string];
 
   if (!post) {
     return <main style={{ backgroundColor: '#2e2650', minHeight: '100vh', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
