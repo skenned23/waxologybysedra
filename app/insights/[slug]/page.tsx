@@ -7,111 +7,65 @@ const posts = {
     title: "First-Timer's Guide to a Brazilian Wax in Warner Robins",
     date: "October 1, 2025",
     image: "/studio1.jpg",
-    content: `Thinking about getting your first Brazilian wax? You're not alone! Many clients in Warner Robins come to us with questions, concerns, and a healthy dose of nervousness about their first experience.
-
-**What Exactly Is a Brazilian Wax?**
-
-A Brazilian wax removes hair from the front, sides, underneath, and between the cheeks. You can customize the coverage based on your preference. Unlike bikini waxes, a Brazilian gives you complete smoothness that lasts 3-4 weeks.
-
-**Why Choose Professional Brazilian Waxing?**
-
-Professional waxers use hard wax designed for sensitive areas, which grips only the hair—not the skin. Licensed studios follow strict sanitation protocols. Skilled technicians know how to minimize discomfort through proper technique.
-
-**Preparing for Your First Brazilian Wax**
-
-Let hair grow to about ¼ inch. The day before, gently exfoliate and take a warm shower. The day of, skip heavy lotions or oils. Consider taking a pain reliever 30-45 minutes before. Wear loose, comfortable clothing.
-
-**What to Expect During Your Brazilian Wax**
-
-Your technician will discuss your preferences and explain the process. Hard wax is applied in small sections, allowed to harden, and quickly removed. First-time Brazilians typically take 30-45 minutes.
-
-**Does a Brazilian Wax Hurt?**
-
-There is some discomfort, but it is often not as bad as first-timers expect. The pain is brief and sharp. Practice deep breathing during removal.
-
-**Aftercare**
-
-For the first 24-48 hours, avoid hot baths, saunas, and intense workouts. Start gentle exfoliation 2-3 days after waxing. Moisturize daily. Schedule your next appointment 4-5 weeks later.`,
+    content: [
+      { type: "p", text: "Thinking about getting your first Brazilian wax? You're not alone! Many clients in Warner Robins come to us with questions, concerns, and a healthy dose of nervousness about their first experience." },
+      { type: "h", text: "What Exactly Is a Brazilian Wax?" },
+      { type: "p", text: "A Brazilian wax removes hair from the front, sides, underneath, and between the cheeks. Unlike bikini waxes, a Brazilian gives you complete smoothness that lasts 3-4 weeks." },
+      { type: "h", text: "Why Choose Professional Brazilian Waxing?" },
+      { type: "p", text: "Professional waxers use hard wax designed for sensitive areas, which grips only the hair, not the skin. Licensed studios follow strict sanitation protocols. Skilled technicians minimize discomfort through proper technique." },
+      { type: "h", text: "Preparing for Your First Brazilian Wax" },
+      { type: "p", text: "Let hair grow to about 1/4 inch. The day before, gently exfoliate and take a warm shower. The day of, skip heavy lotions. Consider a pain reliever 30-45 minutes before. Wear loose, comfortable clothing." },
+      { type: "h", text: "Does a Brazilian Wax Hurt?" },
+      { type: "p", text: "There is some discomfort, but it is often not as bad as first-timers expect. The pain is brief and sharp. Practice deep breathing during removal." },
+      { type: "h", text: "Aftercare" },
+      { type: "p", text: "For the first 24-48 hours, avoid hot baths, saunas, and intense workouts. Start gentle exfoliation 2-3 days after. Moisturize daily. Schedule your next appointment 4-5 weeks later." },
+    ],
   },
   "wax-strips-vs-professional-waxing": {
     title: "Wax Strips vs Professional Waxing: What Really Works?",
     date: "October 1, 2025",
     image: "/studio2.jpg",
-    content: `When it comes to smooth, hair-free skin, you have choices. At-home wax strips promise convenience and savings, while professional waxing offers expertise and better results.
-
-**The Appeal of At-Home Wax Strips**
-
-Drugstore wax strips are tempting: convenience, privacy, and lower upfront cost at $8-$15 per box. But convenience comes with trade-offs.
-
-**Where Wax Strips Fall Short**
-
-Wax strips use a soft wax formula that does not grip short or coarse hair effectively. You will often end up with patchy results and leftover stubble. Regrowth appears faster — often within 1-2 weeks instead of 3-4 weeks from professional waxing.
-
-**Professional Waxing: The Warner Robins Advantage**
-
-Licensed professionals use hard wax that grips hair without sticking to skin. Professional waxing removes hair completely at the root, giving you 3-4 weeks of smooth skin. With consistent visits, hair grows back finer and sparser over time.
-
-**Making the Switch**
-
-Stop shaving 2-3 weeks before your first appointment. Choose a licensed studio with quality products and high hygiene standards. Commit to regular appointments for best results.`,
+    content: [
+      { type: "p", text: "When it comes to smooth, hair-free skin, you have choices. At-home wax strips promise convenience and savings, while professional waxing offers expertise and better results." },
+      { type: "h", text: "The Appeal of At-Home Wax Strips" },
+      { type: "p", text: "Drugstore wax strips are tempting: convenience, privacy, and lower upfront cost at $8-$15 per box. But convenience comes with trade-offs." },
+      { type: "h", text: "Where Wax Strips Fall Short" },
+      { type: "p", text: "Wax strips do not grip short or coarse hair effectively. You will often end up with patchy results and leftover stubble. Regrowth appears faster, often within 1-2 weeks instead of 3-4 weeks from professional waxing." },
+      { type: "h", text: "Professional Waxing: The Warner Robins Advantage" },
+      { type: "p", text: "Licensed professionals use hard wax that grips hair without sticking to skin. Professional waxing removes hair completely at the root, giving you 3-4 weeks of smooth skin. With consistent visits, hair grows back finer over time." },
+      { type: "h", text: "Making the Switch" },
+      { type: "p", text: "Stop shaving 2-3 weeks before your first appointment. Choose a licensed studio with quality products. Commit to regular appointments for the best results." },
+    ],
   },
   "common-myths-misconceptions-about-waxing": {
     title: "Common Myths and Misconceptions About Waxing",
     date: "October 10, 2023",
     image: "/studio3.jpg",
-    content: `As the dedicated owner of Waxology Studio in Warner Robins, I have assisted numerous clients on their hair removal journeys. Today I want to dispel the most persistent myths about waxing.
-
-**Myth 1: Waxing is Excruciatingly Painful**
-
-Waxing does not have to be a painful ordeal. The level of discomfort varies from person to person, and with regular sessions, many find the sensation lessens over time. Any discomfort lasts mere seconds.
-
-**Myth 2: Waxing Causes Ingrown Hairs**
-
-When done with correct technique, waxing can actually reduce ingrown hairs. By removing hair from the root, waxing prevents hair from growing back unevenly. Regular exfoliation further minimizes the risk.
-
-**Myth 3: Waxing Causes Skin Damage**
-
-I use high-quality, hypoallergenic waxes and strict hygiene practices. Temporary redness is short-lived. Regular waxing can actually lead to smoother, healthier skin over time.
-
-**Myth 4: You Need Long Hair for Waxing**
-
-Waxing does not require long hair. Shorter hair can actually be easier to wax, and I am skilled at removing hair as short as 1/8 inch.`,
+    content: [
+      { type: "p", text: "As the dedicated owner of Waxology Studio in Warner Robins, I have assisted numerous clients on their hair removal journeys. Today I want to dispel the most persistent myths about waxing." },
+      { type: "h", text: "Myth 1: Waxing is Excruciatingly Painful" },
+      { type: "p", text: "Waxing does not have to be a painful ordeal. The level of discomfort varies from person to person, and with regular sessions, many find the sensation lessens over time. Any discomfort lasts mere seconds." },
+      { type: "h", text: "Myth 2: Waxing Causes Ingrown Hairs" },
+      { type: "p", text: "When done with correct technique, waxing can actually reduce ingrown hairs. By removing hair from the root, waxing prevents hair from growing back unevenly. Regular exfoliation further minimizes the risk." },
+      { type: "h", text: "Myth 3: Waxing Causes Skin Damage" },
+      { type: "p", text: "I use high-quality, hypoallergenic waxes and strict hygiene practices. Temporary redness is short-lived. Regular waxing can actually lead to smoother, healthier skin over time." },
+      { type: "h", text: "Myth 4: You Need Long Hair for Waxing" },
+      { type: "p", text: "Waxing does not require long hair. Shorter hair can be easier to wax, and I am skilled at removing hair as short as 1/8 inch." },
+    ],
   },
   "waxing-vs-shaving-pros-cons": {
     title: "Waxing vs. Shaving: Pros and Cons for Hair Removal",
     date: "September 10, 2023",
     image: "/gallery1.jpg",
-    content: `As the sole proprietor and hands-on expert behind Waxology Studio in Warner Robins, I've developed an intimate understanding of both waxing and shaving. Today I'm sharing the comprehensive insights you need to confidently choose the hair removal method that aligns with your preferences.
-
-===Waxing: The Smooth Operator===
-
-One of the standout benefits of waxing is the exceptional longevity of its results — weeks of hair-free skin. Waxing eliminates hair from the root, causing it to take significantly longer to grow back. When hair does eventually grow back, it tends to be finer and softer compared to the bristly stubbles that follow shaving. Waxing also offers a fantastic exfoliation benefit — as the wax is pulled away, it removes dead skin cells, leaving your skin softer and more radiant.
-
-**Shaving: The Quick Fix**
-
-Shaving reigns supreme when it comes to speed and convenience. You can swiftly eliminate unwanted hair at home, making it a fantastic option for quick touch-ups. Unlike waxing, shaving offers the flexibility to target hair of any length. However, results are short-lived, with hair returning within a day or two. Shaving carries a higher risk of skin irritation and ingrown hairs.
-
-**The Waxology Studio Experience**
-
-At Waxology Studio, I use high-quality wax and advanced techniques to ensure your complete comfort and satisfaction. I offer customized package services whether you need a full-body wax, eyebrow tinting, or a combination of treatments. If you're unsure whether waxing or shaving is the better choice, reach out at waxologybysedra@gmail.com.
-
-**Making the Decision**
-
-If speed is a priority, shaving may work short-term. But if you're seeking longer-lasting results that reduce overall maintenance, waxing is the superior choice. Waxing tends to be gentler on sensitive skin in the long run. Waxing also requires less frequent upkeep than shaving.
-
-At Waxology Studio, I am wholly committed to meeting your unique hair removal needs. Contact me at waxologybysedra@gmail.com and I'll be delighted to assist you in achieving smooth, beautiful skin.`,
-
-===Waxing: The Smooth Operator===
-
-Waxing delivers weeks of hair-free skin by eliminating hair from the root. When hair grows back, it tends to be finer and softer. Waxing also removes dead skin cells, leaving skin softer and more radiant.
-
-**Shaving: The Quick Fix**
-
-Shaving is fast and convenient. You can target hair of any length with no waiting period. However, results are short-lived — hair returns within a day or two. Shaving carries a higher risk of skin irritation and ingrown hairs.
-
-**Making the Decision**
-
-If you seek longer-lasting results, waxing is the superior choice. Waxing tends to be gentler on sensitive skin in the long run. Waxing requires less frequent upkeep than shaving.`,
+    content: [
+      { type: "p", text: "As the sole proprietor of Waxology Studio in Warner Robins, I have developed an intimate understanding of both waxing and shaving. Today I am sharing the insights you need to confidently choose the right hair removal method." },
+      { type: "h", text: "Waxing: The Smooth Operator" },
+      { type: "p", text: "Waxing delivers weeks of hair-free skin by eliminating hair from the root. When hair grows back, it tends to be finer and softer. Waxing also removes dead skin cells, leaving skin softer and more radiant." },
+      { type: "h", text: "Shaving: The Quick Fix" },
+      { type: "p", text: "Shaving is fast and convenient. You can target hair of any length with no waiting period. However, results are short-lived, with hair returning within a day or two. Shaving carries a higher risk of skin irritation and ingrown hairs." },
+      { type: "h", text: "Making the Decision" },
+      { type: "p", text: "If you seek longer-lasting results, waxing is the superior choice. Waxing tends to be gentler on sensitive skin in the long run. Waxing requires less frequent upkeep than shaving." },
+    ],
   },
 };
 
@@ -124,13 +78,10 @@ export default async function InsightPost(props: any) {
     return (
       <main style={{ backgroundColor: '#2e2650', minHeight: '100vh', color: 'white', padding: '4rem', textAlign: 'center' }}>
         <h1 style={{ color: '#40e0d0' }}>Post not found</h1>
-     
-        <a href="/insights" style={{ color: '#40e0d0', marginTop: '2rem', display: 'block' }}>← Back to Insights</a>
+        <a href="/insights" style={{ color: '#40e0d0', marginTop: '2rem', display: 'block' }}>Back to Insights</a>
       </main>
     );
   }
-
-  const paragraphs = post.content.trim().split('\n\n');
 
   return (
     <>
@@ -155,11 +106,11 @@ export default async function InsightPost(props: any) {
           <h1 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.2rem)', color: '#40e0d0', marginBottom: '0.5rem', lineHeight: '1.3' }}>{post.title}</h1>
           <p style={{ color: '#a89ec9', fontStyle: 'italic', marginBottom: '2rem', fontSize: '0.9rem' }}>Posted on {post.date}</p>
           <img src={post.image} alt={post.title} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px', marginBottom: '2rem' }} />
-          {paragraphs.map((para: string, i: number) => {
-            if (para.startsWith('===') && para.endsWith('===')) {
-              return <h2 key={i} style={{ fontSize: '1.2rem', color: '#e0d0ff', marginTop: '2rem', marginBottom: '0.75rem', fontWeight: '700' }}>{para.replace(/===/g, '')}</h2>;
+          {post.content.map((block: any, i: number) => {
+            if (block.type === 'h') {
+              return <h2 key={i} style={{ fontSize: '1.2rem', color: '#e0d0ff', marginTop: '2rem', marginBottom: '0.75rem', fontWeight: '700' }}>{block.text}</h2>;
             }
-            return <p key={i} style={{ fontSize: '1rem', color: '#c8b8e8', lineHeight: '1.9', marginBottom: '1.25rem' }}>{para}</p>;
+            return <p key={i} style={{ fontSize: '1rem', color: '#c8b8e8', lineHeight: '1.9', marginBottom: '1.25rem' }}>{block.text}</p>;
           })}
           <div style={{ marginTop: '3rem', padding: '2rem', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', textAlign: 'center' }}>
             <p style={{ color: '#e0d0ff', marginBottom: '1rem', fontSize: '1.1rem', fontWeight: '700' }}>Ready to Book?</p>
