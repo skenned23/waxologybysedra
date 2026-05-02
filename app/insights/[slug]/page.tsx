@@ -83,7 +83,7 @@ Waxing does not require long hair. Shorter hair can actually be easier to wax, a
     image: "/gallery1.jpg",
     content: `As the sole proprietor and hands-on expert behind Waxology Studio in Warner Robins, I've developed an intimate understanding of both waxing and shaving. Today I'm sharing the comprehensive insights you need to confidently choose the hair removal method that aligns with your preferences.
 
-**Waxing: The Smooth Operator**
+===Waxing: The Smooth Operator===
 
 One of the standout benefits of waxing is the exceptional longevity of its results — weeks of hair-free skin. Waxing eliminates hair from the root, causing it to take significantly longer to grow back. When hair does eventually grow back, it tends to be finer and softer compared to the bristly stubbles that follow shaving. Waxing also offers a fantastic exfoliation benefit — as the wax is pulled away, it removes dead skin cells, leaving your skin softer and more radiant.
 
@@ -101,7 +101,7 @@ If speed is a priority, shaving may work short-term. But if you're seeking longe
 
 At Waxology Studio, I am wholly committed to meeting your unique hair removal needs. Contact me at waxologybysedra@gmail.com and I'll be delighted to assist you in achieving smooth, beautiful skin.`,
 
-**Waxing: The Smooth Operator**
+===Waxing: The Smooth Operator===
 
 Waxing delivers weeks of hair-free skin by eliminating hair from the root. When hair grows back, it tends to be finer and softer. Waxing also removes dead skin cells, leaving skin softer and more radiant.
 
@@ -156,8 +156,8 @@ export default async function InsightPost(props: any) {
           <p style={{ color: '#a89ec9', fontStyle: 'italic', marginBottom: '2rem', fontSize: '0.9rem' }}>Posted on {post.date}</p>
           <img src={post.image} alt={post.title} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px', marginBottom: '2rem' }} />
           {paragraphs.map((para: string, i: number) => {
-            if (para.startsWith('**') && para.endsWith('**')) {
-              return <h2 key={i} style={{ fontSize: '1.2rem', color: '#e0d0ff', marginTop: '2rem', marginBottom: '0.75rem', fontWeight: '700' }}>{para.replace(/\*\*/g, '')}</h2>;
+            if (para.startsWith('===') && para.endsWith('===')) {
+              return <h2 key={i} style={{ fontSize: '1.2rem', color: '#e0d0ff', marginTop: '2rem', marginBottom: '0.75rem', fontWeight: '700' }}>{para.replace(/===/g, '')}</h2>;
             }
             return <p key={i} style={{ fontSize: '1rem', color: '#c8b8e8', lineHeight: '1.9', marginBottom: '1.25rem' }}>{para}</p>;
           })}
