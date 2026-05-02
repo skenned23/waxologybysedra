@@ -123,9 +123,7 @@ At Waxology Studio, I am wholly committed to meeting your unique hair removal ne
   },
 };
 
-export async function generateStaticParams() {
-  return Object.keys(posts).map((slug) => ({ slug }));
-}
+export const dynamicParams = true;
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const post = posts[params.slug];
