@@ -74,7 +74,18 @@ export default function HeroNeon() {
         textAlign: 'center',
         width: '320px',
       }}>
-        <div style={{ color: '#fbbf24', fontSize: '1.4rem', marginBottom: '0.5rem' }}>★★★★★</div>
+        <h1 style={{
+  color: 'white',
+  fontSize: '1.5rem',
+  fontWeight: '800',
+  fontFamily: 'sans-serif',
+  textAlign: 'center',
+  marginBottom: '0.75rem',
+  textShadow: '0 2px 8px rgba(0,0,0,0.9)',
+  lineHeight: '1.3',
+}}>
+  Brazilian Waxing in<br/>Warner Robins, GA
+</h1>
         <p style={{
           fontSize: '0.85rem',
           color: 'white',
