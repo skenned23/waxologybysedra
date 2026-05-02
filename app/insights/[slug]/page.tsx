@@ -97,8 +97,9 @@ If you seek longer-lasting results, waxing is the superior choice. Waxing tends 
   },
 };
 
-export default function InsightPost(props: any) {
-  const slug = props?.params?.slug || props?.searchParams?.slug;
+export default async function InsightPost(props: any) {
+  const params = await props.params;
+  const slug = params?.slug;
   const post = (posts as any)[slug];
 
   if (!post) {
