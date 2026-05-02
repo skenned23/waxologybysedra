@@ -72,6 +72,8 @@ export default function MobileNav() {
         <div className="mobile-menu">
           <a href="#" onClick={() => setOpen(false)}>Home</a>
           <a href="#services" onClick={() => setOpen(false)}>Services</a>
+          <a href="/insights" onClick={() => setOpen(false)}>Insights</a>
+<a href="/contact" onClick={() => setOpen(false)}>Contact</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Book Now</a>
         </div>
       )}
