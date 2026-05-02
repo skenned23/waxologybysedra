@@ -117,6 +117,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#">Home</a>
           <a href="#services">Services</a>
+          <a href="/contact" style={{ color: 'var(--gray)', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif' }}>Contact</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="nav-book">Book Now</a>
         </div>
         <input type="checkbox" id="hamburger-toggle" className="hamburger-toggle" />
