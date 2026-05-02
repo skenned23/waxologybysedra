@@ -105,7 +105,7 @@ export default function InsightPost(props: any) {
     return (
       <main style={{ backgroundColor: '#2e2650', minHeight: '100vh', color: 'white', padding: '4rem', textAlign: 'center' }}>
         <h1 style={{ color: '#40e0d0' }}>Post not found</h1>
-        <p style={{ color: '#c8b8e8', marginTop: '1rem' }}>Slug: {slug}</p>
+        <p style={{ color: '#c8b8e8', marginTop: '1rem' }}>Slug: {slug} | Props: {JSON.stringify(props)}</p>
         <a href="/insights" style={{ color: '#40e0d0', marginTop: '2rem', display: 'block' }}>← Back to Insights</a>
       </main>
     );
