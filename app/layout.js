@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -57,13 +58,28 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
-       <meta name="google-site-verification" content="_V7OV8ifYM6PofNKSS9VjTV0Hz4rqmjNhH90ixZ8jQk" />
+        <meta name="google-site-verification" content="_V7OV8ifYM6PofNKSS9VjTV0Hz4rqmjNhH90ixZ8jQk" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
         />
       </head>
-      <body>{children}<Analytics /></body>
+      <body>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-LZ5FEZ5456"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LZ5FEZ5456');
+          `}
+        </Script>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
