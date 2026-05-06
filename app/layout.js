@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <head>
-        <meta name="google-site-verification" content="1XLm9WoEA3WgiaebibX5keasu1JomJWdB3E_ETf9AXM" />
+       <meta name="google-site-verification" content="_V7OV8ifYM6PofNKSS9VjTV0Hz4rqmjNhH90ixZ8jQk" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
