@@ -57,7 +57,7 @@ export default function ContactPage() {
             style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
 
             <input type="hidden" name="_subject" value="New message from Waxology Studio website" />
-            <input type="hidden" name="_next" value="https://waxology-ga.vercel.app/contact" />
+            <input type="hidden" name="_next" value="https://waxologybysedra.com/contact" />
             <input type="hidden" name="_captcha" value="false" />
 
             <textarea name="message" placeholder="Tell me about your request" required rows={8}
@@ -84,6 +84,7 @@ export default function ContactPage() {
           <div style={{ textAlign: 'center', marginTop: '60px', color: '#c8b8e8' }}>
             <p style={{ marginBottom: '0.5rem' }}>📍 154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088</p>
             <p style={{ marginBottom: '0.5rem' }}>✉️ waxologybysedra@gmail.com</p>
+          
             <p>By appointment only · No walk-ins</p>
           </div>
         </section>
