@@ -89,7 +89,7 @@ export default function InsightsPage() {
               marginBottom: '2rem',
               alignItems: 'start',
             }}>
-              <img src={post.image} alt={post.title}
+              <img src={post.image} alt={post.title} loading="lazy"
                 style={{ width: '100%', height: '140px', objectFit: 'cover', borderRadius: '8px' }} />
               <div>
                 <Link href={`/insights/${post.slug}`}
