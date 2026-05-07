@@ -59,6 +59,7 @@ export default function AwardBadge() {
           <img
             src="/award-badge.png"
             alt="Best Pros in Town — Waxology by Sedra"
+            loading="lazy"
             style={{
               width: '200px',
               objectFit: 'contain',
