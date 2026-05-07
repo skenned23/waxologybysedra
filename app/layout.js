@@ -17,12 +17,12 @@ export const metadata = {
   title: "Brazilian Waxing Near Me | Waxology Studio Warner Robins",
   description: "Professional waxing services in Warner Robins, GA. Brazilian wax, full body waxing, eyebrow waxing & more. 113+ 5-star reviews. Book online today.",
   alternates: {
-    canonical: "https://waxologybysedra.com",
+    canonical: "https://www.waxologybysedra.com",
   },
   openGraph: {
     title: "Brazilian Waxing Near Me | Waxology Studio Warner Robins",
     description: "Professional waxing services in Warner Robins, GA. Brazilian wax, full body waxing, eyebrow waxing & more. 113+ 5-star reviews. Book online today.",
-    url: "https://waxologybysedra.com",
+    url: "https://www.waxologybysedra.com",
     siteName: "Waxology Studio",
     type: "website",
     images: [
