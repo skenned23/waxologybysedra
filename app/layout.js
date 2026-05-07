@@ -25,6 +25,11 @@ export const metadata = {
     url: "https://waxologybysedra.com",
     siteName: "Waxology Studio",
     type: "website",
+    images: [
+      {
+        url: "https://waxologybysedra.com/waxology.jpg",
+      }
+    ],
   },
 };
 
