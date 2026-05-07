@@ -84,7 +84,7 @@ export default function HeroNeon() {
   textShadow: '0 2px 8px rgba(0,0,0,0.9)',
   lineHeight: '1.3',
 }}>
-  Brazilian Waxing in<br/>Warner Robins, GA
+  Brazilian Waxing in <br/>Warner Robins, GA
 </h1>
         <p style={{
           fontSize: '0.85rem',
