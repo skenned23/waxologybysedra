@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-
 export const metadata = {
   title: "Waxing Services & Prices | Waxology Studio Warner Robins, GA",
   description: "View all waxing services and prices at Waxology Studio in Warner Robins, GA. Brazilian wax, full body waxing, eyebrow waxing, packages and more. Book online today.",
