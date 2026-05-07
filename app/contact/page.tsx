@@ -85,7 +85,26 @@ export default function ContactPage() {
             <p style={{ marginBottom: '0.5rem' }}>📍 154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088</p>
             <p style={{ marginBottom: '0.5rem' }}>✉️ waxologybysedra@gmail.com</p>
           
-            <p>By appointment only · No walk-ins</p>
+            <p style={{ marginBottom: '2rem' }}>By appointment only · No walk-ins</p>
+            <h2 style={{ color: '#40e0d0', fontSize: '1.2rem', marginBottom: '1rem', fontFamily: 'Georgia, serif' }}>Business Hours</h2>
+            <table style={{ margin: '0 auto', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
+              <tbody>
+                {[
+                  ['Monday', 'Closed'],
+                  ['Tuesday', '11:00 AM – 7:00 PM'],
+                  ['Wednesday', '11:00 AM – 7:00 PM'],
+                  ['Thursday', '11:00 AM – 8:00 PM'],
+                  ['Friday', '11:00 AM – 8:00 PM'],
+                  ['Saturday', '11:00 AM – 8:00 PM'],
+                  ['Sunday', '12:00 PM – 6:00 PM'],
+                ].map(([day, hours]) => (
+                  <tr key={day}>
+                    <td style={{ padding: '0.4rem 1.5rem 0.4rem 0', color: '#e0d0ff', fontWeight: '600', textAlign: 'left' }}>{day}</td>
+                    <td style={{ padding: '0.4rem 0', color: '#c8b8e8', textAlign: 'left' }}>{hours}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </section>
       </main>
