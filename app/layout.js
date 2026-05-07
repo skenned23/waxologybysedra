@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Waxology Studio | Brazilian Waxing & Wax Services in Warner Robins, GA",
+  title: "Brazilian Waxing Near Me | Waxology Studio Warner Robins",
   description: "Professional waxing services in Warner Robins, GA. Brazilian wax, full body waxing, eyebrow waxing & more. 113+ 5-star reviews. Book online today.",
   alternates: {
     canonical: "https://waxologybysedra.com",
