@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://waxology-ga.vercel.app/</loc>
+    <loc>https://waxologybysedra.com/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://waxology-ga.vercel.app/contact</loc>
+    <loc>https://waxologybysedra.com/contact</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://waxology-ga.vercel.app/insights</loc>
+    <loc>https://waxologybysedra.com/insights</loc>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://waxologybysedra.com/insights/common-myths-misconceptions-about-waxing</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://waxologybysedra.com/insights/wax-strips-vs-professional-waxing</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://waxologybysedra.com/insights/waxing-vs-shaving-pros-cons</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://waxologybysedra.com/insights/first-timers-guide-brazilian-wax-warner-robins</loc>
+    <priority>0.6</priority>
   </url>
 </urlset>
