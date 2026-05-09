@@ -123,7 +123,7 @@ export default async function InsightPost(props: any) {
           <a href="/insights" style={{ color: '#a89ec9', fontSize: '0.9rem', textDecoration: 'none', display: 'block', marginBottom: '2rem' }}>← Back to Insights</a>
           <h1 style={{ fontSize: 'clamp(1.6rem, 4vw, 2.2rem)', color: '#40e0d0', marginBottom: '0.5rem', lineHeight: '1.3' }}>{post.title}</h1>
           <p style={{ color: '#a89ec9', fontStyle: 'italic', marginBottom: '2rem', fontSize: '0.9rem' }}>Posted on {post.date}</p>
-          <img src={post.image} alt={post.title} style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px', marginBottom: '2rem' }} />
+          <img src={post.image} alt={post.title} loading="lazy" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px', marginBottom: '2rem' }} />
           {post.content.map((block: any, i: number) => {
             if (block.type === 'h') {
               return <h2 key={i} style={{ fontSize: '1.2rem', color: '#e0d0ff', marginTop: '2rem', marginBottom: '0.75rem', fontWeight: '700' }}>{block.text}</h2>;

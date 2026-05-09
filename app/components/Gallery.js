@@ -25,7 +25,7 @@ export default function Gallery() {
       <div style={styles.grid}>
         {images.map((img, i) => (
           <div key={i} style={styles.imgWrap}>
-            <img src={img.src} alt={img.alt} style={styles.img} />
+            <img src={img.src} alt={img.alt} style={styles.img} loading="lazy" />
           </div>
         ))}
       </div>

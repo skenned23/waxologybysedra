@@ -38,7 +38,7 @@ export default function IntroCircles() {
         {cards.map((card, i) => (
           <div key={i} style={styles.card}>
             <div style={styles.circleWrap}>
-              <img src={card.img} alt={card.title} style={styles.circleImg} />
+              <img src={card.img} alt={card.title} style={styles.circleImg} loading="lazy" />
             </div>
             <h3 style={styles.cardTitle}>{card.title}</h3>
             {card.body.map((para, j) => (
