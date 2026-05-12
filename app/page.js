@@ -138,6 +138,7 @@ export default function Home() {
           <a href="/insights">Insights</a>
           <a href="/contact">Contact</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">Book Now</a>
+          <a href="https://www.facebook.com/waxingwarnerrobins" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
         <p>© 2026 Waxology Studio · Warner Robins, GA · "From Head to Toe & Everything in Between"</p>
       </footer>
