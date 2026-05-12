@@ -103,24 +103,25 @@ export default function Home() {
         <div className="trust-item"><strong>Female</strong><span>Owned & Operated</span></div>
       </div>
 
+      <Testimonials />
+
       <div id="services">
         <ServicesTabbed />
       </div>
       <BookingNote />
       <AwardBadge />
-      <Testimonials />
       <Gallery />
-<div style={{ width: '100%', height: '400px', marginTop: '0' }}>
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.7136011213665!2d-83.6795112!3d32.613815100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3e10dc988e429%3A0x669251e05cb753f7!2sWaxology%20Studio!5e0!3m2!1sen!2sus!4v1777735209816!5m2!1sen!2sus"
-    width="100%"
-    height="400"
-    style={{ border: 0, display: 'block' }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
-</div>
+      <div style={{ width: '100%', height: '400px', marginTop: '0' }}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.7136011213665!2d-83.6795112!3d32.613815100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f3e10dc988e429%3A0x669251e05cb753f7!2sWaxology%20Studio!5e0!3m2!1sen!2sus!4v1777735209816!5m2!1sen!2sus"
+          width="100%"
+          height="400"
+          style={{ border: 0, display: 'block' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        />
+      </div>
       <div id="contact" className="cta-section">
         <h2>Ready to Get Smooth?</h2>
         <p>Book your appointment at Waxology Studio today. No deposit required — just show up and let Sedra do the rest.</p>
