@@ -43,7 +43,6 @@ const localBusinessSchema = {
   "name": "Waxology Studio",
   "description": "Professional waxing services in Warner Robins, GA. Brazilian wax, full body waxing, eyebrow waxing and more.",
   "url": "https://waxologybysedra.com",
-  "telephone": "",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "154 S. Houston Lake Rd, Ste 200",
@@ -70,7 +69,13 @@ const localBusinessSchema = {
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "11:00", "closes": "20:00" },
     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "11:00", "closes": "20:00" }
   ],
-  "priceRange": "$$"
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.facebook.com/waxingwarnerrobins",
+    "https://g.page/r/CfdTt1zgUZJmEBM/review",
+    "https://www.yelp.com/biz/waxology-studio-warner-robins"
+  ],
+  "hasMap": "https://www.google.com/maps/place/Waxology+Studio/@32.6138151,-83.6795112,17z"
 };
 
 export default function RootLayout({ children }) {
