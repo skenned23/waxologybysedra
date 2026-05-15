@@ -11,6 +11,24 @@ export const metadata: Metadata = {
 
 const BOOKING_URL = "https://app.10to8.com/book/waxologybysedra/";
 
+function getExcerpt(content: string): string {
+  const lines = content.split("\n");
+  const textLines = lines.filter((line) => {
+    const trimmed = line.trim();
+    return (
+      trimmed.length > 30 &&
+      !trimmed.startsWith("#") &&
+      !trimmed.startsWith("!") &&
+      !trimmed.startsWith("*") &&
+      !trimmed.startsWith("-") &&
+      !trimmed.startsWith("|") &&
+      !trimmed.startsWith("Last updated")
+    );
+  });
+  const clean = textLines.slice(0, 2).join(" ").replace(/\*\*/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").trim();
+  return clean.slice(0, 160) + "...";
+}
+
 function getPosts() {
   const postsDir = path.join(process.cwd(), "data", "posts");
   const files = fs.readdirSync(postsDir).filter((f) => f.endsWith(".md"));
@@ -18,8 +36,10 @@ function getPosts() {
     const raw = fs.readFileSync(path.join(postsDir, filename), "utf-8");
     const { data, content } = matter(raw);
     const slug = filename.replace(".md", "");
-    const excerpt = content.replace(/[#*!\[\]()]/g, "").slice(0, 160).trim() + "...";
-    return { slug, title: data.title || slug, date: data.date || "", image: data.image || "", excerpt };
+    const excerpt = getExcerpt(content);
+    const imageMatch = content.match(/!\[.*?\]\((https?:\/\/[^)]+)\)/);
+    const image = imageMatch ? imageMatch[1] : data.image || "";
+    return { slug, title: data.title || slug, date: data.date || "", image, excerpt };
   });
 }
 
