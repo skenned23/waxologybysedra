@@ -56,6 +56,7 @@ export default async function InsightPost(props) {
                 h2: ({children}) => <h2 style={{ fontSize: '1.2rem', color: '#e0d0ff', marginTop: '2rem', marginBottom: '0.75rem', fontWeight: '700' }}>{children}</h2>,
                 p: ({children}) => <p style={{ marginBottom: '1.25rem' }}>{children}</p>,
                 a: ({href, children}) => <a href={href} style={{ color: '#40e0d0' }}>{children}</a>,
+img: ({src, alt}) => <img src={src} alt={alt} style={{ maxWidth: '100%', height: 'auto', borderRadius: '8px', marginBottom: '1.25rem' }} />,
               }}
             >
               {post.content}
