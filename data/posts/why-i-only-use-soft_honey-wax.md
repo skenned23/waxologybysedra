@@ -1,6 +1,8 @@
-# Why I Only Use Soft/Honey Wax On My Clients at Waxology Studio in Warner Robins, GA
-
-![Professional () hero image with : 'Why Soft Wax is My Secret Weapon for Silky Skin in Warner Robins', in modern white text](https://zsxkvszxbhpwnvzxdydv.supabase.co/storage/v1/object/public/generated-images/kie/4b1cddbb-692d-433c-9217-3c279ccd1de9/slot-0-1779385479665.png)
+---
+title: "Why I Only Use Soft/Honey Wax On My Clients"
+date: "2026-05-21"
+coverImage: "/images/soft-honey-wax.jpg"
+---
 
 Last updated: May 21, 2026
 
