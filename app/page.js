@@ -5,6 +5,7 @@ import BookingNote from './components/BookingNote'
 import AwardBadge from './components/AwardBadge';
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
+import WaxologyDifference from './components/WaxologyDifference'
 
 const BOOKING_URL = 'https://app.10to8.com/book/waxologybysedra/'
 
@@ -103,6 +104,7 @@ export default function Home() {
       </div>
 
       <Testimonials />
+      <WaxologyDifference />
 
       <IntroCircles />
 
