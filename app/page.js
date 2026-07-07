@@ -94,7 +94,6 @@ export default function Home() {
       </nav>
 
       <HeroNeon />
-      <IntroCircles />
 
       <div className="trust-bar">
         <div className="trust-item"><strong>10+</strong><span>Years Experience</span></div>
@@ -104,6 +103,8 @@ export default function Home() {
       </div>
 
       <Testimonials />
+
+      <IntroCircles />
 
       <div id="services">
         <ServicesTabbed />
