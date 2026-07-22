@@ -67,7 +67,7 @@ export default function PromoPopup() {
         >
           ×
         </button>
-        
+        <a
           href="https://app.10to8.com/book/waxologybysedra/"
           target="_blank"
           rel="noopener noreferrer"
