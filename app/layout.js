@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import Script from "next/script";
-
+import PromoPopup from './components/PromoPopup';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -101,6 +101,7 @@ export default function RootLayout({ children }) {
             gtag('config', 'G-LZ5FEZ5456');
           `}
         </Script>
+        <PromoPopup />
         {children}
         <Analytics />
       </body>
