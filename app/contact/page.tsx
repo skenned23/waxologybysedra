@@ -96,7 +96,11 @@ export default function ContactPage() {
             <p style={{ marginBottom: '0.5rem' }}>✉️ waxologybysedra@gmail.com</p>
           
             <p style={{ marginBottom: '2rem' }}>By appointment only · No walk-ins</p>
-            <h2 style={{ color: '#40e0d0', fontSize: '1.2rem', marginBottom: '1rem', fontFamily: 'Georgia, serif' }}>Business Hours</h2>
+            <h2 style={{ color: '#40e0d0', fontSize: '1.2rem', marginBottom: '1rem', fontFamily: 'Georgia, serif' }}>Appointment Available Times</h2>
+            <p style={{ fontSize: '0.9rem', color: '#c8b8e8', marginBottom: '1rem' }}>
+              By appointment only. Open slots vary, so{' '}
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" style={{ color: '#40e0d0' }}>book online</a> to see what's available.
+            </p>
             <table style={{ margin: '0 auto', borderCollapse: 'collapse', fontSize: '0.95rem' }}>
               <tbody>
                 {[
