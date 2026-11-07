@@ -6,8 +6,11 @@ import AwardBadge from './components/AwardBadge';
 import Testimonials from './components/Testimonials'
 import Gallery from './components/Gallery'
 import WaxologyDifference from './components/WaxologyDifference'
+import FirstTimer from './components/FirstTimer'
+import MobileBookBar from './components/MobileBookBar'
 
 const BOOKING_URL = 'https://app.10to8.com/book/waxologybysedra/'
+const DIRECTIONS_URL = 'https://www.google.com/maps/dir/?api=1&destination=Waxology+Studio%2C+154+S+Houston+Lake+Rd+Ste+200%2C+Warner+Robins%2C+GA+31088'
 
 export default function Home() {
   return (
@@ -111,6 +114,7 @@ export default function Home() {
       <div id="services">
         <ServicesTabbed />
       </div>
+      <FirstTimer />
       <BookingNote />
       <AwardBadge />
       <Gallery />
@@ -129,9 +133,10 @@ export default function Home() {
         <h2>Ready to Get Smooth?</h2>
         <p>Book your appointment at Waxology Studio today. No deposit required — just show up and let Sedra do the rest.</p>
         <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="btn-white">Book Your Appointment →</a>
-        <p style={{marginTop: '1.5rem', opacity: 0.8, fontSize: '0.9rem'}}>
-          📍 154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088<br/>
-          By appointment only · No walk-ins · waxologybysedra@gmail.com
+        <p style={{marginTop: '1.5rem', opacity: 0.9, fontSize: '0.9rem'}}>
+          📍 <a href={DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" style={{ color: 'white', textDecoration: 'underline' }}>154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088 · Get directions</a><br/>
+          By appointment only · No walk-ins<br/>
+          Questions? <a href="/contact" style={{ color: 'white', textDecoration: 'underline', fontWeight: 700 }}>Send Sedra a message</a>
         </p>
       </div>
 
@@ -146,6 +151,7 @@ export default function Home() {
         </div>
         <p>© 2026 Waxology Studio · Warner Robins, GA · "From Head to Toe & Everything in Between"</p>
       </footer>
+      <MobileBookBar />
     </>
   )
 }

@@ -24,10 +24,10 @@ export default function ContactPage() {
         <a href="/" style={{ fontSize: '1.3rem', fontWeight: '700', color: '#6b3fa0', textDecoration: 'none', fontFamily: 'sans-serif' }}>
           Waxology <span style={{ color: '#e91e8c' }}>Studio</span>
         </a>
-        <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-          <a href="/" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif' }}>Home</a>
+        <div className="contact-nav" style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+          <a href="/" className="cn-hide" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif' }}>Home</a>
           <a href="/#services" style={{ color: '#6b7280', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif' }}>Services</a>
-          <a href="/contact" style={{ color: '#6b3fa0', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif', fontWeight: '600' }}>Contact</a>
+          <a href="/contact" className="cn-hide" style={{ color: '#6b3fa0', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif', fontWeight: '600' }}>Contact</a>
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer"
             style={{ background: 'linear-gradient(135deg, #e91e8c, #6b3fa0)', color: 'white', padding: '0.5rem 1.25rem', borderRadius: '25px', fontWeight: '600', textDecoration: 'none', fontSize: '0.9rem', fontFamily: 'sans-serif' }}>
             Book Now
@@ -48,12 +48,16 @@ export default function ContactPage() {
             style={{ color: '#40e0d0', fontWeight: '700', fontSize: '1rem', textDecoration: 'underline' }}>
             Click here to Book Online!
           </a>
+          <p style={{ fontSize: '0.95rem', color: '#e0d0ff', maxWidth: '560px', margin: '1.25rem auto 0', lineHeight: '1.7' }}>
+            💬 I'm usually with a client, so a message here is the best way to reach me. I'll reply as soon as I'm free!
+          </p>
         </section>
 
         <section style={{ maxWidth: '900px', margin: '0 auto', padding: '20px 20px 80px' }}>
           <form
             action="https://formsubmit.co/waxologybysedra@gmail.com"
             method="POST"
+            className="contact-form"
             style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
 
             <input type="hidden" name="_subject" value="New message from Waxology Studio website" />
@@ -61,6 +65,7 @@ export default function ContactPage() {
             <input type="hidden" name="_captcha" value="false" />
 
             <textarea name="message" placeholder="Tell me about your request" required rows={8}
+              className="cf-message"
               style={{ gridRow: '1 / 4', padding: '1rem', background: 'white', border: 'none', borderRadius: '4px', fontSize: '0.95rem', color: '#333', resize: 'vertical', fontFamily: 'Georgia, serif' }}
             />
             <input type="text" name="name" placeholder="Your name" required
@@ -82,7 +87,12 @@ export default function ContactPage() {
           </form>
 
           <div style={{ textAlign: 'center', marginTop: '60px', color: '#c8b8e8' }}>
-            <p style={{ marginBottom: '0.5rem' }}>📍 154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088</p>
+            <p style={{ marginBottom: '0.5rem' }}>
+              📍 <a href="https://www.google.com/maps/dir/?api=1&destination=Waxology+Studio%2C+154+S+Houston+Lake+Rd+Ste+200%2C+Warner+Robins%2C+GA+31088"
+                target="_blank" rel="noopener noreferrer" style={{ color: '#c8b8e8' }}>
+                154 S. Houston Lake Rd, Ste 200, Warner Robins, GA 31088 · Get directions
+              </a>
+            </p>
             <p style={{ marginBottom: '0.5rem' }}>✉️ waxologybysedra@gmail.com</p>
           
             <p style={{ marginBottom: '2rem' }}>By appointment only · No walk-ins</p>
@@ -108,6 +118,17 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
+      <style>{`
+        @media (max-width: 640px) {
+          .contact-form { grid-template-columns: 1fr !important; }
+          .contact-form .cf-message { grid-row: auto !important; }
+          .contact-nav { gap: 0.9rem !important; }
+          .contact-nav .cn-hide { display: none; }
+          nav { padding: 0.9rem 1rem !important; }
+          nav a { white-space: nowrap; }
+          nav > a:first-child { font-size: 1.1rem !important; }
+        }
+      `}</style>
     </>
   );
 }

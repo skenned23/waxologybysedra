@@ -33,7 +33,7 @@ export default function WaxologyDifference() {
             </li>
             <li style={styles.listItem}>
               <span style={styles.check}>✓</span>
-              <span>Female-owned and operated, with a 4.7-star rating across 113 Google reviews</span>
+              <span>Female-owned and operated, with 113 five-star Google reviews and a 4.7-star rating overall</span>
             </li>
             <li style={styles.listItem}>
               <span style={styles.check}>✓</span>
