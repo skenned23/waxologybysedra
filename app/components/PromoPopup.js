@@ -73,7 +73,7 @@ export default function PromoPopup() {
           rel="noopener noreferrer"
         >
           <img
-            src="/promo-brazilian-wax-bonus.png"
+            src="/promo-brazilian-wax-bonus.jpg"
             alt="Brazilian Wax + Free Bonus - Limited Time Offer"
             style={{
               maxWidth: '100%',

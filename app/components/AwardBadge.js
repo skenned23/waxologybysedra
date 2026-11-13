@@ -57,7 +57,7 @@ export default function AwardBadge() {
         {/* Center badge */}
         <div style={{ flex: '0 0 220px', textAlign: 'center' }}>
           <img
-            src="/award-badge.png"
+            src="/award-badge.jpg"
             alt="Best Pros in Town — Waxology by Sedra"
             loading="lazy"
             style={{

@@ -21,6 +21,7 @@ export default function HeroNeon() {
       }}>
         <img
           src="/hero.jpg"
+          fetchPriority="high"
           alt="Waxology Studio"
           style={{
             width: '100%',
@@ -45,7 +46,8 @@ export default function HeroNeon() {
         overflow: 'hidden',
       }}>
         <img
-          src="/hero2.png"
+          src="/hero2.jpg"
+          fetchPriority="high"
           alt="Professional waxing service"
           style={{
             width: '100%',
