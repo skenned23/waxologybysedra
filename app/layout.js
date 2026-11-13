@@ -31,7 +31,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://waxologybysedra.com/intro3.jpg",
+        url: "https://www.waxologybysedra.com/intro3.jpg",
       }
     ],
   },
@@ -42,7 +42,7 @@ const localBusinessSchema = {
   "@type": "BeautySalon",
   "name": "Waxology Studio",
   "description": "Professional waxing services in Warner Robins, GA. Brazilian wax, full body waxing, eyebrow waxing and more.",
-  "url": "https://waxologybysedra.com",
+  "url": "https://www.waxologybysedra.com",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "154 S. Houston Lake Rd, Ste 200",
